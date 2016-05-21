@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
     <link rel="stylesheet" type="text/css" href="css/font_new_16.css">
-     <script src="js/moment.js"></script>
+     <script src="js/moment.min.js"></script>
 
           <script src="js/bootstrap-datetimepicker.js"></script>
         <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
-        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+        <!-- <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" /> -->
         <link rel="stylesheet" type="text/css" href="css/style_guide.css">
        
 
@@ -275,15 +275,24 @@
         $(function () {
             $('#datetimepicker8').datetimepicker({
                 icons: {
-                    time: "fa fa-clock-o",
+                    // time: "fa fa-clock-o",
                     date: "fa fa-calendar",
-                    up: "fa fa-arrow-up",
-                    down: "fa fa-arrow-down"
+                    // up: "fa fa-arrow-up",
+                    // down: "fa fa-arrow-down"
                 }
             });
         });
     </script>
-
+    <script>
+    $(document).ready(function () {
+    $input = $("#select_date");
+    $input.datepicker({
+        format: 'dd MM yyyy'
+    });
+    $input.data('datepicker').hide = function () {};
+    $input.datepicker('show');
+});
+    </script>
 
     <!-- ----------------------ENd datepicker------------------- -->
 
