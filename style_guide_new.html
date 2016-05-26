@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>style guide bootsrap</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font_new_16.css">    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="css/style_guide_new.css">
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+        <script src="js/moment.min.js"></script>
+
+    <script src="js/bootstrap-datetimepicker.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="col-md-12">
+<div class="col-md-12">&nbsp;</div>
+<div class="col-md-12">&nbsp;</div>
+
+<div class="col-md-3">
+                <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+                        <symbol id="ripply-scott2" viewBox="0 0 100 100">
+                            <circle id="ripple-shape" cx="1" cy="1" r="1" />
+                        </symbol>
+                    </svg>
+                </div>
+                <div class="content">
+                    <!-- button component -->
+                    <button id="js-ripple-btn2" class="button form_box styl-material">
+                        IMPORT STUDENT
+                        <br> LIST
+                        <svg class="ripple-obj" id="js-ripple2">
+                            <use height="100" width="100" xlink:href="#ripply-scott2" class="js-ripple2"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+
+             <!-- -------buttons--------- -->
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+                <symbol id="ripply-scott" viewBox="0 0 100 100">
+                    <circle id="ripple-shape" cx="1" cy="1" r=".7" />
+                </symbol>
+                <symbol id="ripply-scott1" viewBox="0 0 100 100">
+                    <circle id="ripple-shape" cx="1" cy="1" r=".7" />
+                </symbol>
+            </svg>
+        </div>
+        <div class="content">
+            <!-- button component -->
+            <button id="js-ripple-btn" class="button styl-material">
+                LOGIN
+                <svg class="ripple-obj" id="js-ripple">
+                    <use height="100" width="100" xlink:href="#ripply-scott" class="js-ripple"></use>
+                </svg>
+            </button>
+            <button id="js-ripple-btn1" class="button styl-material can_but">
+                CANCEL
+                <svg class="ripple-obj1" id="js-ripple1">
+                    <use height="100" width="100" xlink:href="#ripply-scott1" class="js-ripple1"></use>
+                </svg>
+            </button>
+        </div>
+        <!-- --------end button----- -->
+
+        <!-- ------------TEXT FIELD foe two columns----------------- -->
+         <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12 tregular">
+        <div class="col-md-6 ">
+
+        <span class="txt_labl">Text field</span><input type="txt" name="" class="text_fld">
+        </div>
+
+        <div class="col-md-6 ">
+
+        <span class="txt_labl">Text field</span><input type="txt" name="" class="text_fld">
+        </div>
+        </div>
+
+<div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+
+        <div class="col-md-12 big_fld">
+<span class="txt_labl">Text field</span><input type="txt" name="" class="text_fld" style="width:74%;">
+        </div>
+
+
+
+
+        <!-- -----------end Text field------------ -->
+
+         <!-- -----------------------------DATE piCker--------------- -->
+
+           <div class="col-md-12">&nbsp;</div>
+        <div class="col-md-12">&nbsp;</div>
+        <div class="col-sm-6" style="height:130px;">
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker8'>
+                    <input type='text' class="form-control datpickr" />
+                    <span class="input-group-addon">
+                    <span class="fa fa-calendar">
+                    </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+        $(function() {
+            $('#datetimepicker8').datetimepicker({
+                icons: {
+                    // time: "fa fa-clock-o",
+                    date: "fa fa-calendar",
+                    up: "fa fa-arrow-up",
+                    down: "fa fa-arrow-down"
+                },
+                format: 'DD/MM/YYYY',
+
+                 widgetPositioning: {
+            horizontal: 'right',
+            vertical: 'bottom'
+        }
+            });
+        });
+        </script>
+        <!-- ----------------------ENd datepicker------------------- -->
+
+
+</div>
+</body>
+</html>
