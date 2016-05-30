@@ -134,15 +134,15 @@ background-color: #22aae2;
 }
 
 .bootstrap-datetimepicker-widget.dropdown-menu{
- 	width: 65%;
+ 	width: 45%;
  }
 
 .datepicker-days {
-    padding: 15px;
+    /*padding: 15px;*/
 }
 
 .bootstrap-datetimepicker-widget table td.day{
-	padding:10px 10px;
+	/*padding:10px 10px;*/
 }
 
 
@@ -202,4 +202,17 @@ input[type="radio"]:checked + label span {
   -o-transition: background-color 0.4s linear;
   -moz-transition: background-color 0.4s linear;
   transition: background-color 0.4s linear;
+}
+
+
+
+/*------------new drop-down--------------*/
+#dctime{
+border-radius: 0px;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    outline: 0;
+    box-shadow: none;
+    color: #8e8e8e;
 }
